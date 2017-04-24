@@ -1,9 +1,12 @@
 python
 python3.5-dev
+https://launchpad.net/~fkrull/+archive/ubuntu/deadsnakes/+files/libpython3.5-dbg_3.5.3-1+trusty1_amd64.deb
+
 ffmpeg
+https://launchpad.net/~mc3man/+archive/ubuntu/trusty-media/+files/ffmpeg_3.2.2+git~trusty_amd64.deb
+
 libopus-dev
 libffi-dev
 libsodium-dev
-https://launchpad.net/~mc3man/+archive/ubuntu/trusty-media/+files/ffmpeg_3.2.2+git~trusty_amd64.deb
 https://launchpad.net/~chris-lea/+archive/ubuntu/libsodium/+files/libsodium-dbg_1.0.3-1chl1~trusty1_amd64.deb
-https://launchpad.net/~fkrull/+archive/ubuntu/deadsnakes/+files/libpython3.5-dbg_3.5.3-1+trusty1_amd64.deb
+

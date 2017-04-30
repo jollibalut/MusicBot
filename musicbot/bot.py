@@ -180,6 +180,7 @@ class MusicBot(discord.Client):
                         await self.on_player_finished_playing(player)
 
                     joined_servers.append(channel.server)
+
                 except Exception as e:
                     if self.config.debug_mode:
                         traceback.print_exc()
@@ -1960,6 +1961,17 @@ class MusicBot(discord.Client):
             traceback.print_exc()
             if self.config.debug_mode:
                 await self.safe_send_message(message.channel, '```\n%s\n```' % traceback.format_exc())
+
+    async def cmd_tryhard(self, player):
+        """
+        Usage:
+            {command_prefix}tryhard
+
+        Sets the playback volume to 1. Chicken dinner time!
+        """
+        player.volume = 0.01
+        return Response("Set volume to 1. Goodluck fuckers! <:steveo:304283112962129921>")
+
 
     async def on_voice_state_update(self, before, after):
         if not all([before, after]):

@@ -1972,6 +1972,15 @@ class MusicBot(discord.Client):
         player.volume = 0.01
         return Response("Set volume to 1. Goodluck fuckers! <:steveo:304283112962129921>")
 
+    async def cmd_assemble(self):
+        """
+        Usage:
+            {command_prefix}assemble
+
+        COME2ME
+        """
+        return Response(":regional_indicator_c: :regional_indicator_o: :regional_indicator_m: :regional_indicator_e: :two: :regional_indicator_m: :regional_indicator_e: :regional_indicator_p: :regional_indicator_o: :regional_indicator_c: :regional_indicator_h: :regional_indicator_i: :regional_indicator_n: :regional_indicator_k: :regional_indicator_i:")
+
 
     async def on_voice_state_update(self, before, after):
         if not all([before, after]):
